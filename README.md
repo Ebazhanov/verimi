@@ -15,6 +15,11 @@ You will need the following technologies available to try it out:
 
 ```mvn clean test```
 
+
+### Video how does it look like on my PC
+
+#### [video](https://monosnap.com/file/aT8yiXrW1bbHyk6OGqOIVoq8ogeoWP)
+
 ## Task
 
 Manual Steps: Access https://verimi.de/en and register as a customer
