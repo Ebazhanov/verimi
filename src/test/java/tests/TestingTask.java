@@ -6,15 +6,18 @@ import pages.HomePage;
 
 public class TestingTask extends BasicUiClass {
 
+    private static final String LOGIN_NAME = "alex.novitski.resume@gmail.com";
+    private static final String PASSWORD = "Alex1978!";
+
     @Test
     public void loginSuccess() {
         new HomePage()
                 .openLoginPage("/en")
                 .clickOnLoginButton()
-                .enterUserName("alex.novitski.resume@gmail.com")
-                .enterPassword("Sonechka1978!")
+                .enterUserName(LOGIN_NAME)
+                .enterPassword(PASSWORD)
                 .clickOnSubmitButton()
-                //.verifyFlashMessageText(flashMessage)
-        ;
+                .assertEmailIsPresent(LOGIN_NAME);
     }
+
 }
